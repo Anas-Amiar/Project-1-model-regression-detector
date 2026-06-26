@@ -32,9 +32,7 @@ def _mock_classify(email_text: str) -> ClassificationResult:
     text = email_text.lower()
     if any(w in text for w in ["charge", "refund", "invoice", "payment", "billing"]):
         category = "billing"
-    elif any(w in text for w in ["crash", "bug", "error", "won't load", "broken"]):
-        category = "technical"
-    elif any(w in text for w in ["password", "login", "log in", "account", "locked out"]):
+elif any(w in text for w in ["password", "login", "log in", "account", "locked out"]):
         category = "account"
     else:
         category = "general"
