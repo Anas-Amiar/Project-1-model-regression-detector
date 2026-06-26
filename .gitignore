@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 reports/history/
 reports/*.html
+!reports/baseline.json

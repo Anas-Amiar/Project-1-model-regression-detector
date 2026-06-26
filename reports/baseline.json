@@ -1,0 +1,130 @@
+{
+  "run_timestamp": "2026-06-26T14:32:36.559932+00:00",
+  "prompt_version": "v1",
+  "dataset_version": "v1",
+  "total_cases": 10,
+  "passed_cases": 8,
+  "pass_rate": 0.8,
+  "results": [
+    {
+      "id": "tc_001",
+      "difficulty": "easy",
+      "input": "I was charged twice for my subscription this month, please refund the duplicate charge.",
+      "expected_category": "billing",
+      "actual_category": "billing",
+      "category_correct": true,
+      "expected_summary": "Customer reports a duplicate subscription charge and requests a refund.",
+      "actual_summary": "I was charged twice for my subscription this month, please refund the duplicate charge",
+      "summary_overlap_score": 0.33,
+      "passed": true
+    },
+    {
+      "id": "tc_002",
+      "difficulty": "easy",
+      "input": "The app crashes every time I try to upload a photo larger than 5MB.",
+      "expected_category": "technical",
+      "actual_category": "technical",
+      "category_correct": true,
+      "expected_summary": "App crashes when uploading photos larger than 5MB.",
+      "actual_summary": "The app crashes every time I try to upload a photo larger than 5MB",
+      "summary_overlap_score": 0.5,
+      "passed": true
+    },
+    {
+      "id": "tc_003",
+      "difficulty": "easy",
+      "input": "I can't log into my account, it says my password is wrong even after resetting it.",
+      "expected_category": "account",
+      "actual_category": "account",
+      "category_correct": true,
+      "expected_summary": "Customer cannot log in despite resetting their password.",
+      "actual_summary": "I can't log into my account, it says my password is wrong even after resetting it",
+      "summary_overlap_score": 0.25,
+      "passed": true
+    },
+    {
+      "id": "tc_004",
+      "difficulty": "easy",
+      "input": "Just wanted to say I really love the new dashboard redesign, great job team!",
+      "expected_category": "general",
+      "actual_category": "general",
+      "category_correct": true,
+      "expected_summary": "Customer praises the new dashboard redesign.",
+      "actual_summary": "Just wanted to say I really love the new dashboard redesign, great job team!",
+      "summary_overlap_score": 0.5,
+      "passed": true
+    },
+    {
+      "id": "tc_005",
+      "difficulty": "medium",
+      "input": "My invoice shows the wrong plan tier and now I can't access features I'm paying for.",
+      "expected_category": "billing",
+      "actual_category": "billing",
+      "category_correct": true,
+      "expected_summary": "Invoice shows the wrong plan tier, blocking access to paid features.",
+      "actual_summary": "My invoice shows the wrong plan tier and now I can't access features I'm paying for",
+      "summary_overlap_score": 0.55,
+      "passed": true
+    },
+    {
+      "id": "tc_006",
+      "difficulty": "medium",
+      "input": "kinda annoyed, app keeps logging me out randomly, anyone else having this issue???",
+      "expected_category": "technical",
+      "actual_category": "general",
+      "category_correct": false,
+      "expected_summary": "App randomly logs the user out unexpectedly.",
+      "actual_summary": "kinda annoyed, app keeps logging me out randomly, anyone else having this issue???",
+      "summary_overlap_score": 0.29,
+      "passed": false
+    },
+    {
+      "id": "tc_007",
+      "difficulty": "hard",
+      "input": "ok",
+      "expected_category": "general",
+      "actual_category": "general",
+      "category_correct": true,
+      "expected_summary": "Email contains no actionable content.",
+      "actual_summary": "ok",
+      "summary_overlap_score": 0.0,
+      "passed": true
+    },
+    {
+      "id": "tc_008",
+      "difficulty": "hard",
+      "input": "Bonjour, je n'arrive pas a me connecter a mon compte malgre plusieurs tentatives.",
+      "expected_category": "account",
+      "actual_category": "general",
+      "category_correct": false,
+      "expected_summary": "Customer cannot log into their account despite multiple attempts.",
+      "actual_summary": "Bonjour, je n'arrive pas a me connecter a mon compte malgre plusieurs tentatives",
+      "summary_overlap_score": 0.0,
+      "passed": false
+    },
+    {
+      "id": "tc_009",
+      "difficulty": "hard",
+      "input": "Oh great, ANOTHER bug. Cool. Love how the export button does literally nothing when I click it.",
+      "expected_category": "technical",
+      "actual_category": "technical",
+      "category_correct": true,
+      "expected_summary": "The export button does not work when clicked.",
+      "actual_summary": "Oh great, ANOTHER bug",
+      "summary_overlap_score": 0.0,
+      "passed": true
+    },
+    {
+      "id": "tc_010",
+      "difficulty": "hard",
+      "input": "I want to update my billing address and also my password, both are out of date.",
+      "expected_category": "billing",
+      "actual_category": "billing",
+      "category_correct": true,
+      "expected_summary": "Customer wants to update their billing address and password.",
+      "actual_summary": "I want to update my billing address and also my password, both are out of date",
+      "summary_overlap_score": 0.56,
+      "passed": true
+    }
+  ]
+}
