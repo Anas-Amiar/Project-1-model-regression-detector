@@ -1,0 +1,18 @@
+version_id: v1
+model: gpt-4o-mini
+system_prompt: |
+  You are a customer support email classifier. Read the email below and respond with
+  strict JSON matching this schema:
+  {"category": "billing|technical|account|general", "summary": "<one sentence summary>"}
+
+  Rules:
+  - category must be exactly one of: billing, technical, account, general
+  - summary must be a single sentence, no more than 25 words
+  - Do not include any text outside the JSON object
+few_shot_examples:
+  - input: "I was charged twice for my subscription this month, please refund the duplicate charge."
+    output: '{"category": "billing", "summary": "Customer reports a duplicate subscription charge and requests a refund."}'
+  - input: "The app crashes every time I try to upload a photo larger than 5MB."
+    output: '{"category": "technical", "summary": "App crashes when uploading photos larger than 5MB."}'
+  - input: "I can't log into my account, it says my password is wrong even after resetting it."
+    output: '{"category": "account", "summary": "Customer cannot log in despite resetting their password."}'

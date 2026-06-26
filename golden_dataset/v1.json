@@ -1,0 +1,86 @@
+{
+  "dataset_version": "v1",
+  "notes": "Hand-written test cases with human-verified correct answers. This is the answer key the eval engine checks against.",
+  "test_cases": [
+    {
+      "id": "tc_001",
+      "input": "I was charged twice for my subscription this month, please refund the duplicate charge.",
+      "expected_category": "billing",
+      "expected_summary": "Customer reports a duplicate subscription charge and requests a refund.",
+      "difficulty": "easy",
+      "notes": "Clear billing keyword, unambiguous."
+    },
+    {
+      "id": "tc_002",
+      "input": "The app crashes every time I try to upload a photo larger than 5MB.",
+      "expected_category": "technical",
+      "expected_summary": "App crashes when uploading photos larger than 5MB.",
+      "difficulty": "easy",
+      "notes": "Clear technical bug report."
+    },
+    {
+      "id": "tc_003",
+      "input": "I can't log into my account, it says my password is wrong even after resetting it.",
+      "expected_category": "account",
+      "expected_summary": "Customer cannot log in despite resetting their password.",
+      "difficulty": "easy",
+      "notes": "Clear account access issue."
+    },
+    {
+      "id": "tc_004",
+      "input": "Just wanted to say I really love the new dashboard redesign, great job team!",
+      "expected_category": "general",
+      "expected_summary": "Customer praises the new dashboard redesign.",
+      "difficulty": "easy",
+      "notes": "No issue at all, should fall into general."
+    },
+    {
+      "id": "tc_005",
+      "input": "My invoice shows the wrong plan tier and now I can't access features I'm paying for.",
+      "expected_category": "billing",
+      "expected_summary": "Invoice shows the wrong plan tier, blocking access to paid features.",
+      "difficulty": "medium",
+      "notes": "Could be misread as technical (access issue) but root cause is billing/invoice."
+    },
+    {
+      "id": "tc_006",
+      "input": "kinda annoyed, app keeps logging me out randomly, anyone else having this issue???",
+      "expected_category": "technical",
+      "expected_summary": "App randomly logs the user out unexpectedly.",
+      "difficulty": "medium",
+      "notes": "Casual tone, no punctuation, could be confused with account category since it mentions logging out."
+    },
+    {
+      "id": "tc_007",
+      "input": "ok",
+      "expected_category": "general",
+      "expected_summary": "Email contains no actionable content.",
+      "difficulty": "hard",
+      "notes": "Extremely short, near-empty email. Edge case for minimal input."
+    },
+    {
+      "id": "tc_008",
+      "input": "Bonjour, je n'arrive pas a me connecter a mon compte malgre plusieurs tentatives.",
+      "expected_category": "account",
+      "expected_summary": "Customer cannot log into their account despite multiple attempts.",
+      "difficulty": "hard",
+      "notes": "Non-English input (French). Tests whether the model handles other languages correctly."
+    },
+    {
+      "id": "tc_009",
+      "input": "Oh great, ANOTHER bug. Cool. Love how the export button does literally nothing when I click it.",
+      "expected_category": "technical",
+      "expected_summary": "The export button does not work when clicked.",
+      "difficulty": "hard",
+      "notes": "Sarcastic tone. Tests whether sarcasm confuses sentiment/category detection."
+    },
+    {
+      "id": "tc_010",
+      "input": "I want to update my billing address and also my password, both are out of date.",
+      "expected_category": "billing",
+      "expected_summary": "Customer wants to update their billing address and password.",
+      "difficulty": "hard",
+      "notes": "Spans two categories (billing + account). Labeled billing as the primary intent, but flagged as ambiguous."
+    }
+  ]
+}
