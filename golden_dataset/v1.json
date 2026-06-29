@@ -1,6 +1,6 @@
 {
   "dataset_version": "v1",
-  "notes": "Hand-written test cases with human-verified correct answers. This is the answer key the eval engine checks against.",
+  "notes": "Hand-written test cases with human-verified correct answers. This is the answer key the eval engine checks against. Verified working as of the CI re-run test.",
   "test_cases": [
     {
       "id": "tc_001",
